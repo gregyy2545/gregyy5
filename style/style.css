@@ -1,10 +1,6 @@
-body{
-    background-image:linear-gradient(120deg, #fff, #000);
-}
 .card{
     width: 700px;
     height: 1570px;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     border-radius: 5px;
     display: flex;
@@ -12,7 +8,17 @@ body{
     justify-content: space-between;
     align-content: space-around;
 }
+body{  background: linear-gradient(120deg, #fff, #000);
+}
+.nadpis{
+    width: 400px;
+    height: 100px;
+    border-radius: 5px;
+    font-size: 100px;
+    color: #000;
+    font-family:'Times New Roman', Times, serif;
 
+}
 .img_1{
     height: 200px;
 }
@@ -21,6 +27,7 @@ body{
 }
 .img_3{
    height: 200px;
+   
 }
 .img_4{
    height: 200px;
@@ -475,7 +482,7 @@ a {
   align-items: center;
   width: 150px;
   height: 40px;
-  background: #9dc852;
+  background: #000;
   text-align: center;
   color: #ffffff;
   font-weight: bold;
@@ -493,7 +500,7 @@ a {
   margin: 0 auto;
   width: 0;
   height: 0;
-  border-top: 5px solid #9dc852;
+  border-top: 5px solid #000;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
   z-index: 101;
@@ -501,11 +508,11 @@ a {
 }
 
 .menu-title:hover {
-  background: #8db842;
+  background: #000;
 }
 
 .menu-title:hover:before {
-  border-top-color: #8db842;
+  border-top-color: #000;
 }
 
 .menu:hover > .menu-title:before {
@@ -588,4 +595,34 @@ a {
   padding-top: 0;
   padding-bottom: 0;
   color: rgba(0, 0, 0, 0);
+}
+.menu__{
+    display: flex;
+    justify-content: end;
+}
+.hamburger {
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.hamburger:before {
+  top: -6px;
+}
+
+.hamburger:after {
+  bottom: -6px; /* Posun dolnej čiarky nadol */
 }
