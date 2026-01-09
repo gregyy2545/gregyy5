@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/buy_1.css">
+</head>
+<body>
+    <div class="card_1"></div>
+
+<p class="p">the 10: Jordan 1 off-white Chicago</p>
+<p class="p"> 999€ </p>
+
+<label for="auta" class="size">EU <select>
+  <option >37</option>
+  <option >37.5</option>
+  <option >38</option>
+  <option >38.5</option>
+  <option >39</option>
+  <option >39.5</option>
+  <option >40</option>
+  <option >40.5</option>
+  <option >41</option>
+  <option >41.5</option>
+  <option >42</option>
+  <option >42.5</option>
+  <option >43</option>
+  <option >43.5</option>
+  <option >44</option>
+  <option >44.5</option>
+  <option >45</option>
+  <option >45.5</option>
+  <option >46</option>
+  <option >46.5</option>
+</select>
+</label>
+    <p class="btn">Buy now</p>
+    </div>
+
+    <div class="card_2">
+        <img class="l_shape" src="img/left.png" alt="Prepínač" onclick="prepniObrazky()">
+        <img class="topanky" id="hlavnyObrazok" src="img/topanky_1.png" alt="Obrazok 1">
+        <img class="r_shape" src="img/right.png" alt="Prepínač" onclick="prepniObrazky()">
+    </div>
+
+    <script>
+        function prepniObrazky() {
+            var img = document.getElementById('hlavnyObrazok');
+            
+            if (img.src.match("img/topanky_1.png")) {
+                img.src = "img/img_card_02_01.png";
+            } else {
+                img.src = "img/topanky_1.png";
+            }
+        }
+    </script>
+
+</body>
+</html>
