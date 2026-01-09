@@ -624,5 +624,5 @@ a {
 }
 
 .hamburger:after {
-  bottom: -6px; /* Posun dolnej čiarky nadol */
+  bottom: -6px;
 }
